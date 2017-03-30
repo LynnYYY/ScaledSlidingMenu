@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:se7en="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.se7en.slidingmenu.SlidingMenu
+        android:id="@+id/id_sliding_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        se7en:rightPadding="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/id_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FF0000">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/id_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#333333">
+
+            </FrameLayout>
+        </LinearLayout>
+    </com.example.se7en.slidingmenu.SlidingMenu>
+</RelativeLayout>
